@@ -10,9 +10,10 @@ We recommend using Anaconda / Miniconda to create a conda environment for using 
 conda create -n CellHermes python==3.10.15
 ```
 
-Then, you can activate the environment using:
+Then, you can activate the environment using and install the required packages:
 ```python
 conda activate CellHermes
+pip install -r requirement.txt
 ```
 The training of CellHermes was performed by LLaMA-Factory (version: 0.9.1), so it is needed to configure the environment according to the environment of LLaMA-Factory. This can be done by switching to the [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) or directly use the following command:
 ```
