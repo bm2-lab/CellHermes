@@ -32,7 +32,7 @@ We release these variants of ​​CellHermes​​. Please download to the `mod
 
 ### 🚀 Training
 
-Model training is conducted on 8 80G NVIDIA H800 GPUs.
+Model training is conducted on 2 NVIDIA RTX A6000 GPUs.
 
 ```bash
 conda activate CellHermes
