@@ -30,6 +30,16 @@ We release these variants of ​​CellHermes​​. Please download to the `mod
 | [CellHermes-Multi-Task](https://huggingface.co/) | Instruction fine-tuning | Instruction-tuned model with 7 databases across 10 tasks |
 | [CellHermes-T-Cell-Reactivity](https://huggingface.co/) | Instruction fine-tuning | Instruction-tuned model with T cell tumor-reactivity prediction task  |
 
+### 🚀 Training
+
+Model training is conducted on 8 80G NVIDIA H800 GPUs.
+
+```bash
+conda activate CellHermes
+cd LLama_factory_v0.9.1.dev0 
+bash pretrain.sh
+```
+
 ### 🌻 Acknowledgement
 We gratefully acknowledge the use some of codes from the following projects: [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [scGPT](https://github.com/bowang-lab/scGPT), [GenePT](https://github.com/yiqunchen/GenePT). Our work builds upon their foundational contributions.
 
