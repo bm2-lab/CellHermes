@@ -29,6 +29,9 @@ We release these variants of ​​CellHermes​​. Please download to the `pre
 | [CellHermes-Multi-Task](https://huggingface.co/) | Instruction fine-tuning |   |
 | [CellHermes-T-Cell-Reactivity](https://huggingface.co/) | Instruction fine-tuning |   |
 
+### 🌻 Acknowledgement
+We gratefully acknowledge the use some of codes from the following projects: [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [scGPT](https://github.com/bowang-lab/scGPT), [GenePT](https://github.com/yiqunchen/GenePT). Our work builds upon their foundational contributions.
+
 ## 🔖 Citation  
 ## 😀 Contacts
 bm2-lab@tongji.edu.cn  
