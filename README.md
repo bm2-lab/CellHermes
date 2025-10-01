@@ -26,8 +26,8 @@ We release these variants of ​​CellHermes​​. Please download to the `pre
 |------------|-----------| -------|
 | [LLaMA-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)   | Base | The base LLM used in this study |
 | [CellHermes](https://huggingface.co/)   | Pretraining | Spiking LLMs model on single-cell transcriptomic data and PPI network, simultaneously |
-| [CellHermes-Multi-Task](https://huggingface.co/) | Instruction fine-tuning |   |
-| [CellHermes-T-Cell-Reactivity](https://huggingface.co/) | Instruction fine-tuning |   |
+| [CellHermes-Multi-Task](https://huggingface.co/) | Instruction fine-tuning | Instruction-tuned model with 7 databases across 10 tasks |
+| [CellHermes-T-Cell-Reactivity](https://huggingface.co/) | Instruction fine-tuning | Instruction-tuned model with T cell tumor-reactivity prediction task  |
 
 ### 🌻 Acknowledgement
 We gratefully acknowledge the use some of codes from the following projects: [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [scGPT](https://github.com/bowang-lab/scGPT), [GenePT](https://github.com/yiqunchen/GenePT). Our work builds upon their foundational contributions.
