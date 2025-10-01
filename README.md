@@ -37,7 +37,8 @@ Model training is conducted on 2 NVIDIA RTX A6000 GPUs.
 ```bash
 conda activate CellHermes
 cd LLama_factory_v0.9.1.dev0 
-bash pretrain.sh
+bash ../bash_scripts/pretrain.sh
+llamafactory-cli export ../bash_scripts/merge_lora_config.yaml
 ```
 
 ### 🌻 Acknowledgement
