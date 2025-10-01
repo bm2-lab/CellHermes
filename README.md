@@ -21,7 +21,7 @@ pip install -e ".[torch,metrics]"
 ```
 
 ### 🤖 Pretrained Checkpoint
-We release these variants of ​​CellHermes​​. Please download to the `pretrained_ckpt` directory.
+We release these variants of ​​CellHermes​​. Please download to the `model_ckpt` directory.
 | Model Name | Stage | Description |
 |------------|-----------| -------|
 | [LLaMA-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)   | Base | The base LLM used in this study |
