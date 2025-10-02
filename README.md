@@ -40,6 +40,9 @@ cd LLama_factory_v0.9.1.dev0
 bash ../bash_scripts/pretrain.sh
 llamafactory-cli export ../bash_scripts/merge_lora_config.yaml
 ```
+### 🔆 As encoder
+### 🔆 As predictor
+### 🔆 As explainer
 
 ### 🌻 Acknowledgement
 We gratefully acknowledge the use some of codes from the following projects: [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [scGPT](https://github.com/bowang-lab/scGPT), [GenePT](https://github.com/yiqunchen/GenePT). Our work builds upon their foundational contributions.
