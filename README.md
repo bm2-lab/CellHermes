@@ -41,6 +41,29 @@ bash ../bash_scripts/pretrain.sh
 llamafactory-cli export ../bash_config/merge_lora_config.yaml
 ```
 ### 🔆 As encoder
+```bash
+conda activate CellHermes
+python ./scripts/CellHermes_as_encoder_for_embedding.py \
+                    -m ./model_ckpt/CellHermes \
+                    -i "Gene BRCA1" \
+                    -o "./saves/gene_tmp_emb.pkl"
+```
+
+```bash
+conda activate CellHermes
+python ./scripts/CellHermes_as_encoder_for_embedding.py \
+                    -m ./model_ckpt/CellHermes \
+                    -i "A cell with genes ranked by expression: MALAT1 TMSB4X B2M SRGN FTH1 BTG1 GNLY TPT1 EEF1A1 HLA-A ZFP36L2 PTMA HLA-B TMSB10 XCL1 PABPC1 ANXA1" \
+                    -o "./saves/cell_tmp_emb.pkl"
+```
+
+```bash
+conda activate CellHermes
+python ./scripts/CellHermes_as_encoder_for_embedding.py \
+                    -m ./model_ckpt/CellHermes \
+                    -i "A cell with genes ranked by expression: MALAT1 TMSB4X B2M RGS1 CCL3 CCL4 CD69 JUNB HSP90AA1 ZFP36 FTH1 DNAJB1 DUSP1 SAT1 CXCR4. In this cell, Gene BRCA1" \
+                    -o "./saves/cell_specific_gene_tmp_emb.pkl"
+```
 ### 🔆 As predictor
 ### 🔆 As explainer
 
