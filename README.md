@@ -40,7 +40,7 @@ cd LLama_factory_v0.9.1.dev0
 bash ../bash_scripts/pretrain.sh
 llamafactory-cli export ../bash_config/merge_lora_config.yaml
 ```
-### 🔆 As encoder
+### 🔆 As an encoder
 The following are commands for encoding biological entities by CellHermes, such as genes, cells and cell-specific genes.
 #### Obtaining gene embeddding for a given gene
 ```bash
@@ -66,8 +66,8 @@ python ./scripts/CellHermes_as_encoder_for_embedding.py \
                     -i "A cell with genes ranked by expression: MALAT1 TMSB4X B2M RGS1 CCL3 CCL4 CD69 JUNB HSP90AA1 ZFP36 FTH1 DNAJB1 DUSP1 SAT1 CXCR4. In this cell, Gene BRCA1" \
                     -o "./saves/cell_specific_gene_tmp_emb.pkl"
 ```
-### 🔆 As predictor
-### 🔆 As explainer
+### 🔆 As a predictor
+### 🔆 As an explainer
 
 ### 🌻 Acknowledgement
 We gratefully acknowledge the use some of codes from the following projects: [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [scGPT](https://github.com/bowang-lab/scGPT), [GenePT](https://github.com/yiqunchen/GenePT). Our work builds upon their foundational contributions.
