@@ -41,6 +41,8 @@ bash ../bash_scripts/pretrain.sh
 llamafactory-cli export ../bash_config/merge_lora_config.yaml
 ```
 ### 🔆 As encoder
+The following are commands for encoding biological entities by CellHermes, such as genes, cells and cell-specific genes.
+#### Obtaining gene embeddding for a given gene
 ```bash
 conda activate CellHermes
 python ./scripts/CellHermes_as_encoder_for_embedding.py \
@@ -48,7 +50,7 @@ python ./scripts/CellHermes_as_encoder_for_embedding.py \
                     -i "Gene BRCA1" \
                     -o "./saves/gene_tmp_emb.pkl"
 ```
-
+#### Obtaining cell embeddding for a given cell transcriptomic information (gene rank in this case)
 ```bash
 conda activate CellHermes
 python ./scripts/CellHermes_as_encoder_for_embedding.py \
@@ -56,7 +58,7 @@ python ./scripts/CellHermes_as_encoder_for_embedding.py \
                     -i "A cell with genes ranked by expression: MALAT1 TMSB4X B2M SRGN FTH1 BTG1 GNLY TPT1 EEF1A1 HLA-A ZFP36L2 PTMA HLA-B TMSB10 XCL1 PABPC1 ANXA1" \
                     -o "./saves/cell_tmp_emb.pkl"
 ```
-
+#### Obtaining gene embedding for a given gene from a specific cell with its transcriptomic information (gene rank in this case)
 ```bash
 conda activate CellHermes
 python ./scripts/CellHermes_as_encoder_for_embedding.py \
