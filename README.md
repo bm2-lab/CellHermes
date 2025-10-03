@@ -37,7 +37,7 @@ Model training is conducted on 2 NVIDIA RTX A6000 GPUs.
 ```bash
 conda activate CellHermes
 cd LLama_factory_v0.9.1.dev0 
-bash ../bash_scripts/pretrain.sh
+bash ../bash_config/pretrain.sh
 llamafactory-cli export ../bash_config/merge_lora_config.yaml
 ```
 ### 🔆 As an encoder
@@ -67,6 +67,12 @@ python ./scripts/CellHermes_as_encoder_for_embedding.py \
                     -o "./saves/cell_specific_gene_tmp_emb.pkl"
 ```
 ### 🔆 As a predictor
+The following are commands for fine-tuning CellHermes with multiple task datasets, such as perturbation prediction, cell fitness prediction, gene interaction prediction, etc. Users can change the `--dataset` parameter in `multitask_ft.sh` file to incorporate any dataset they want.
+```bash
+conda activate CellHermes
+cd LLama_factory_v0.9.1.dev0 
+bash ../bash_config/multitask_ft.sh
+```
 ### 🔆 As an explainer
 
 ### 🌻 Acknowledgement
