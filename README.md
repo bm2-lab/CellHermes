@@ -48,7 +48,7 @@ conda activate CellHermes
 python ./scripts/CellHermes_as_encoder_for_embedding.py \
                     -m ./model_ckpt/CellHermes \
                     -i "Gene BRCA1" \
-                    -o "./saves/gene_tmp_emb.pkl"
+                    -o ./output/gene_tmp_emb.pkl
 ```
 #### Obtaining cell embeddding for a given cell transcriptomic information (gene rank in this case)
 ```bash
@@ -56,7 +56,7 @@ conda activate CellHermes
 python ./scripts/CellHermes_as_encoder_for_embedding.py \
                     -m ./model_ckpt/CellHermes \
                     -i "A cell with genes ranked by expression: MALAT1 TMSB4X B2M SRGN FTH1 BTG1 GNLY TPT1 EEF1A1 HLA-A ZFP36L2 PTMA HLA-B TMSB10 XCL1 PABPC1 ANXA1" \
-                    -o "./saves/cell_tmp_emb.pkl"
+                    -o ./output/cell_tmp_emb.pkl
 ```
 #### Obtaining gene embedding for a given gene from a specific cell with its transcriptomic information (gene rank in this case)
 ```bash
@@ -64,7 +64,7 @@ conda activate CellHermes
 python ./scripts/CellHermes_as_encoder_for_embedding.py \
                     -m ./model_ckpt/CellHermes \
                     -i "A cell with genes ranked by expression: MALAT1 TMSB4X B2M RGS1 CCL3 CCL4 CD69 JUNB HSP90AA1 ZFP36 FTH1 DNAJB1 DUSP1 SAT1 CXCR4. In this cell, Gene BRCA1" \
-                    -o "./saves/cell_specific_gene_tmp_emb.pkl"
+                    -o ./output/cell_specific_gene_tmp_emb.pkl
 ```
 ### 🔆 As a predictor
 The following are commands for fine-tuning CellHermes with multiple task datasets, such as perturbation prediction, cell fitness prediction, gene interaction prediction, etc. Users can change the `--dataset` parameter in `multitask_ft.sh` file to incorporate any dataset they want.
@@ -73,6 +73,15 @@ conda activate CellHermes
 cd LLama_factory_v0.9.1.dev0 
 bash ../bash_config/multitask_ft.sh
 ```
+```bash
+conda activate CellHermes
+python ./scripts/CellHermes_as_predictor_for_prediction.py \
+                    -m ./model_ckpt/CellHermes \
+                    -a ./model_ckpt/CellHermes-Multi-Task \
+                    -i ./data/task_tmp.json \
+                    -o ./output/task_tmp_predictions.jsonl
+```
+
 ### 🔆 As an explainer
 
 ### 🌻 Acknowledgement
