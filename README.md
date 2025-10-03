@@ -73,6 +73,7 @@ conda activate CellHermes
 cd LLama_factory_v0.9.1.dev0 
 bash ../bash_config/multitask_ft.sh
 ```
+The following are commands for inference on the one of downstream testing datasets.
 ```bash
 conda activate CellHermes
 python ./scripts/CellHermes_as_predictor_for_prediction.py \
