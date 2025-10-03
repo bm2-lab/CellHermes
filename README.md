@@ -84,7 +84,15 @@ python ./scripts/CellHermes_as_predictor_for_prediction.py \
 ```
 
 ### 🔆 As an explainer
-
+The following are commands for explaining the CellHermes's prediction results based on text-based reasoning.
+```bash
+conda activate CellHermes
+python ./scripts/CellHermes_as_explainer_for_reasoning.py \
+                    -m ./model_ckpt/CellHermes \
+                    -a ./model_ckpt/CellHermes-T-Cell-Reactivity \
+                    -i "Given a T cell from metastatic melanoma patients with its top 100 highly expressed gene list, ranked by expression level: RGS1 CCL3 CCL4 CD69 JUNB HSP90AA1. You think that this T cell is Reactive. Please explain your reasoning." \
+                    -o ./output/cell_tmp_reasoning.pkl
+```
 ### 🌻 Acknowledgement
 We gratefully acknowledge the use some of codes from the following projects: [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [scGPT](https://github.com/bowang-lab/scGPT), [GenePT](https://github.com/yiqunchen/GenePT). Our work builds upon their foundational contributions.
 
