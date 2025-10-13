@@ -30,6 +30,29 @@ We release these variants of ​​CellHermes​​. Please download to the `mod
 | [CellHermes-Multi-Task](https://huggingface.co/) | Instruction fine-tuning | Instruction-tuned model adapter with 7 databases across 10 tasks |
 | [CellHermes-T-Cell-Reactivity](https://huggingface.co/) | Instruction fine-tuning | Instruction-tuned model adapter with T cell tumor-reactivity prediction task  |
 
+### 🌟 Overview
+
+The overall directory structure of the project is as follows:
+```
+├── 📂 scripts/                                 # source code
+├── 📂 bash_config/                             # training & inference config 
+├── 📂 data/                                    # datasets
+│   ├── 📂 pretrain_datasets/                   # datasets for pretraining CellHermes
+│   ├── 📂 multitask_datasets/                  # datasets for fine-tuning CellHermes for multi task prediction
+│   ├── 📂 perturbation_scaling_law_dataset/    # datasets for fine-tuning CellHermes for testing scaling law on genetic perturbation prediction
+│   ├── 📂 t_cell_reactivity_dataset/           # datasets for fine-tuning CellHermes for t cell tumor reactivity
+│   ├── 📂 gene_level_downstream_tasks/         # datasets for gene level benchmarking datasets
+│   ├── 📂 cell_level_downstream_tasks/         # datasets for cell level benchmarking datasets
+│   ├── 📂 benchmarked_gene_embeddings/         # datasets of gene embeddings from various benchmarked models
+│   └── 📂 benchmarked_cell_embeddings/         # datasets of cell embeddings from various benchmarked models on various datasets
+├──  📂 model_ckpt/                             # store the pretrained checkpoints
+│   ├── 📂 LLaMA-3.1-8B-Instruct/               # Base open-source LLM model
+│   ├── 📂 CellHermes/                          # CellHermes model
+│   ├── 📂 CellHermes-Multi-Task/               # Multi-task CellHermes model
+└── └── 📂 CellHermes-T-Cell-Reactivity/        # T cell reactivity prediction model
+
+```
+
 ### 🚀 Training
 
 Model training is conducted on 2 NVIDIA RTX A6000 GPUs.
