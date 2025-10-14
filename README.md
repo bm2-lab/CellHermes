@@ -30,6 +30,22 @@ We release these variants of ​​CellHermes​​. Please download to the `mod
 | [CellHermes-Multi-Task](https://huggingface.co/) | Instruction fine-tuning | Instruction-tuned model adapter with 7 databases across 10 tasks |
 | [CellHermes-T-Cell-Reactivity](https://huggingface.co/) | Instruction fine-tuning | Instruction-tuned model adapter with T cell tumor-reactivity prediction task  |
 
+### 📚 Data
+
+We provide the dataset in [Zenodo](https://zenodo.org/). Please download the data to the project directory and use the following command to extract it:
+```bash
+mkdir data
+cd data
+unzip pretrain_datasets.zip
+unzip multitask_datasets.zip
+unzip perturbation_scaling_law_dataset.zip
+unzip t_cell_reactivity_dataset.zip
+unzip gene_level_downstream_tasks.zip
+unzip cell_level_downstream_tasks.zip
+unzip benchmarked_gene_embeddings.zip
+unzip benchmarked_cell_embeddings.zip
+```
+
 ### 🌟 Overview
 
 The overall directory structure of the project is as follows:
