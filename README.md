@@ -136,5 +136,4 @@ We gratefully acknowledge the use some of codes from the following projects: [LL
 
 ## 🔖 Citation  
 ## 😀 Contacts
-bm2-lab@tongji.edu.cn  
-gao.yicheng.98@gmail.com
+ gao.yicheng.98@gmail.com
