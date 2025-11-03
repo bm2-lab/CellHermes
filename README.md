@@ -1,6 +1,6 @@
 
 
-# <img src="https://github.com/bm2-lab/CellHermes/blob/main/img/Logo.png" width="20" height="20"> Language is all omics needs: Unifying single-cell omics through language with CellHermes
+# <img src="https://github.com/bm2-lab/CellHermes/blob/main/img/Logo.png" width="50" height="50"> Language is all omics needs: Unifying single-cell omics through language with CellHermes
   <a href="https://huggingface.co/EthanGao123/CellHermes-v1.0"><img alt="Chat"
     src="https://img.shields.io/badge/🤖%20Model-CellHermes%20V1-536af5?color=536af5&logoColor=white"/></a>
   <a href="https://huggingface.co/EthanGao123/CellHermes-v1.0"><img alt="Hugging Face"
