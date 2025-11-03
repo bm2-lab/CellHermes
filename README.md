@@ -1,6 +1,6 @@
 # Language is all omics needs: Unifying single-cell omics through language with CellHermes
   <a href="https://huggingface.co/EthanGao123/CellHermes-v1.0"><img alt="Chat"
-    src="https://img.shields.io/badge/🤖%20Chat-CellHermes%20V1-536af5?color=536af5&logoColor=white"/></a>
+    src="https://img.shields.io/badge/🤖%20Model-CellHermes%20V1-536af5?color=536af5&logoColor=white"/></a>
   <a href="https://huggingface.co/EthanGao123/CellHermes-v1.0"><img alt="Hugging Face"
     src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-CellHermes_AI-ffc107?color=ffc107&logoColor=white" /></a>
   <a href="https://github.com/deepseek-ai/DeepSeek-V3/blob/main/LICENSE-CODE"><img alt="Code License"
