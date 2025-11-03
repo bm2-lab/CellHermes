@@ -1,4 +1,13 @@
 # Language is all omics needs: Unifying single-cell omics through language with CellHermes
+  <a href="https://huggingface.co/EthanGao123/CellHermes-v1.0"><img alt="Chat"
+    src="https://img.shields.io/badge/🤖%20Chat-CellHermes%20V1-536af5?color=536af5&logoColor=white"/></a>
+  <a href="https://huggingface.co/EthanGao123/CellHermes-v1.0"><img alt="Hugging Face"
+    src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-CellHermes_AI-ffc107?color=ffc107&logoColor=white" /></a>
+  <a href="https://github.com/deepseek-ai/DeepSeek-V3/blob/main/LICENSE-CODE"><img alt="Code License"
+    src="https://img.shields.io/badge/Code_License-GNU-f5de53?&color=f5de53"/></a>
+  <a href="https://github.com/deepseek-ai/DeepSeek-V3/blob/main/LICENSE-MODEL"><img alt="Model License"
+    src="https://img.shields.io/badge/Model_License-Model_Agreement-f5de53?&color=f5de53"/></a>
+  <br>
 ## 💡 Introduction 
 This repository hosts the official implementation of CellHermes, a framework that can unify heterogeneous single-cell omics data by existing LLMs. Upon powerful capabilitz of LLMs, such as text-based understanding and reasoning, we can used it as encoder, predictor and explainer. This design allows CellHermes to span the entire research loop from representation learning to prediction and interpretability.
 <p align="center"><img src="https://github.com/bm2-lab/CellHermes/blob/main/img/Framework.png" alt="CellHermes" width="900px" /></p> 
